@@ -7,7 +7,7 @@ You can read the post for this repository by clicking on: <a href="https://r-int
 
 Juan Pablo Carreón Hidalgo
 
-<jpch_26@outlook.com>
+<jpch_26@outlook.com>  
 <https://twitter.com/JuanPa2601>
 
  
