@@ -3,7 +3,7 @@ R in the Lab: Principal Component Analysis from Scratch
 
 How to perform PCA step by step using just basic linear algebra functions and operations.
 
-You can read the post for this repository by clicking on: <a href="https://r-inthelab.net/2021/10/14/principal-component-analysis-pca-from-scratch/">Nested Designs and their Analysis</a>.
+You can read the post for this repository by clicking on: <a href="https://r-inthelab.net/2021/10/14/principal-component-analysis-pca-from-scratch/">Principal Component Analysis from Scratch</a>.
 
 Juan Pablo Carreón Hidalgo
 
