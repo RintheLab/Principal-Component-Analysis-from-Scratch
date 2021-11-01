@@ -23,7 +23,7 @@ data_set_wine <- read.csv(
 
 head(data_set_wine)
 
-# Center and divude by standard deviation ---------------------------------
+# Center and divide by standard deviation ---------------------------------
 
 # Means for each variable
 var_means <- unlist(map(data_set_wine, mean))
@@ -33,10 +33,10 @@ var_sd <- unlist(map(data_set_wine, sd))
 
 # Center each variable
 data_set_wine_2 <- map2(
-  data_set_wine, var_means, .f = function(x, mean) x -mean
+  data_set_wine, var_means, .f = function(x, mean) x - mean
 )
 
-# Devide by the standard deviation of each variable
+# Divide by the standard deviation of each variable
 data_set_wine_2 <- map2(
   data_set_wine_2, var_sd, .f = function(x, sd) x / sd
 )
@@ -76,7 +76,7 @@ ncol(eg_vecs)
 # Calculate variances from each eigenvalue
 eg_vars <- eg_vals / (nrow(data_set_wine_2) - 1)
 
-# Data frame with variance percenatges
+# Data frame with variance percentages
 vars_perc <- data.frame(
   PC  = unlist(map(1:14, function(x) paste0("PC", x))),
   PER = round((eg_vars * 100) / sum(eg_vars), 4)
@@ -97,7 +97,7 @@ ggplot(
 # Change the basis of the data
 data_set_wine_eb <- data_set_wine_2 %*% solve(eg_vecs)
 
-# Transfrom to a data frame
+# Transform to a data frame
 data_set_wine_eb <- data.frame(data_set_wine_eb)
 colnames(data_set_wine_eb) <- vars_perc$PC
 
